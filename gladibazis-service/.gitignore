@@ -32,5 +32,5 @@ build/
 /src/main/resources/application.properties
 /mvnw
 /mvnw.cmd
-/pom.xml
+#/pom.xml
 /.mvn/wrapper/
