@@ -23,6 +23,7 @@ public class GladiService {
                             .color(gladiCredentials.getColor())
                             .name(gladiCredentials.getName())
                             .height(gladiCredentials.getHeigth())
+                            .pictures(gladiCredentials.getPictures())
                             .build()
             );
         } catch (Exception e){
