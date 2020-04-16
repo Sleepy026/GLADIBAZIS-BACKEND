@@ -1,5 +1,6 @@
 package com.gladibazis.gladibazisservice.controller;
 
+import com.gladibazis.gladibazisservice.controller.dto.CommentCredentials;
 import com.gladibazis.gladibazisservice.controller.dto.GladiCredentials;
 import com.gladibazis.gladibazisservice.model.Gladiolus;
 import com.gladibazis.gladibazisservice.repository.GladiolusRepository;
@@ -29,5 +30,10 @@ public class RouteController {
     public ResponseEntity<String> createNewGladi(@RequestBody GladiCredentials gladiolus){
         String resp = gladiService.registerNewVariety(gladiolus);
         return ResponseEntity.ok(resp);
+    }
+
+    @PostMapping("/new_comment")
+    public String addNewComment(@RequestBody CommentCredentials commentCredentials){
+        return "ok";
     }
 }

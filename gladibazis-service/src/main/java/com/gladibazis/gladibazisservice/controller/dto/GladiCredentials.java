@@ -10,6 +10,6 @@ import java.util.List;
 public class GladiCredentials {
     private String name;
     private String color;
-    private Integer heigth;
+    private Integer height;
     private List<String> pictures;
 }
