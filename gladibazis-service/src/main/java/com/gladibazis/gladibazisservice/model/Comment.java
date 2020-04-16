@@ -1,6 +1,7 @@
 package com.gladibazis.gladibazisservice.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -22,8 +23,12 @@ public class Comment {
     @GeneratedValue
     private Long id;
 
+    @Transient
+    private Long flowerId;
+
     @Column(nullable = false)
     @JsonFormat(pattern="yyyy-MM-dd HH:mm")
+    @JsonIgnore
     private LocalDateTime date;
 
     @Column(nullable = false)
@@ -33,6 +38,7 @@ public class Comment {
     private String commentText;
 
     @ManyToOne
+    @JsonIgnore
     private Gladiolus gladiolus;
 
 

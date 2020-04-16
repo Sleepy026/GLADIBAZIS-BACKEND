@@ -1,5 +1,6 @@
 package com.gladibazis.gladibazisservice.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.*;
 
 import javax.persistence.*;
@@ -34,11 +35,13 @@ public class Gladiolus {
     @Singular
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
+    @JsonBackReference
     private List<Comment> comments = new ArrayList<>();
 
     @ElementCollection
     @Singular
     private Set<String> pictures = new HashSet<>();
-//
+
+
 
 }
