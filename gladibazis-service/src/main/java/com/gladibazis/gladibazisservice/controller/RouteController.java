@@ -34,7 +34,7 @@ public class RouteController {
     @GetMapping("/comments")
     public List<Comment> getCommentsByFlower(@RequestParam Long flowerId){
         return gladiService.getCommentsByFlower(flowerId);
-        
+
     }
 
     @PostMapping("/comment/add")

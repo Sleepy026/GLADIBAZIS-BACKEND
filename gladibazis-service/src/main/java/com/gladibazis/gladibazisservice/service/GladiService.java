@@ -1,12 +1,10 @@
 package com.gladibazis.gladibazisservice.service;
 
-import com.gladibazis.gladibazisservice.controller.dto.CommentCredentials;
 import com.gladibazis.gladibazisservice.controller.dto.GladiCredentials;
 import com.gladibazis.gladibazisservice.model.Comment;
 import com.gladibazis.gladibazisservice.model.Gladiolus;
 import com.gladibazis.gladibazisservice.repository.CommentRepository;
 import com.gladibazis.gladibazisservice.repository.GladiolusRepository;
-import com.sun.xml.bind.v2.TODO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,8 +12,7 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.Optional;
+
 
 @Service
 @RequiredArgsConstructor
@@ -44,6 +41,7 @@ public class GladiService {
             return "This variety already exist.";
         };
         return "The flower has successfuly created.";
+
     }
 
     public String addNewComment(Comment comment){
