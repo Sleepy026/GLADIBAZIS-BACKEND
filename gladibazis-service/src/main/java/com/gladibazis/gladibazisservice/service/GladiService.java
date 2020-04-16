@@ -28,12 +28,12 @@ public class GladiService {
     private CommentRepository commentRepository;
 
     public String registerNewVariety(GladiCredentials gladiCredentials){
-        String response = "The flower has successfuly created.";
         try {
             gladiolusRepository.save(
                     Gladiolus.builder()
                             .color(gladiCredentials.getColor())
                             .name(gladiCredentials.getName())
+                            .authorId(gladiCredentials.getAuthorId())
                             .height(gladiCredentials.getHeight())
                             .pictures(gladiCredentials.getPictures())
                             .totalScore(0)
@@ -41,28 +41,10 @@ public class GladiService {
                             .build()
             );
         } catch (Exception e){
-            response = "This variety already exist.";
+            return "This variety already exist.";
         };
-        return response;
+        return "The flower has successfuly created.";
     }
-
-//    public String addNewComment(CommentCredentials commentCredentials){
-//        try {
-//            Gladiolus gladi = gladiolusRepository.findById(commentCredentials.flowerId).orElseThrow();
-//            Comment comment = Comment.builder()
-//                    .userName(commentCredentials.userName)
-//                    .commentText(commentCredentials.comment)
-//                    .date(LocalDateTime.now())
-//                    .build();
-//
-//            comment.setGladiolus(gladi);
-//            commentRepository.save(comment);
-//
-//        } catch (Error e){
-//            return "Something went wrong";
-//        }
-//        return "New comment added.";
-//    }
 
     public String addNewComment(Comment comment){
         try {
@@ -77,18 +59,18 @@ public class GladiService {
         return "New comment added.";
     }
 
-    public String removeComment(Comment comment) {
+    public String removeComment(Long id) {
         try{
-            commentRepository.deleteById(comment.getId());
+            commentRepository.deleteById(id);
         } catch (Exception e){
             return "Failed";
         }
         return "Success";
     }
 
-    public List<Comment> getCommentsByFlower(Gladiolus gladiolus) {
+    public List<Comment> getCommentsByFlower(Long id) {
         try {
-            return commentRepository.findAllByGladiolusId(gladiolus.getId());
+            return commentRepository.findAllByGladiolusId(id);
         }catch (Exception e){
            return new ArrayList<>();
         }

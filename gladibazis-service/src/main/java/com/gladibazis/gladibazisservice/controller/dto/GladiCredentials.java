@@ -9,6 +9,7 @@ import java.util.List;
 @NoArgsConstructor
 public class GladiCredentials {
     private String name;
+    private Long authorId;
     private String color;
     private Integer height;
     private List<String> pictures;

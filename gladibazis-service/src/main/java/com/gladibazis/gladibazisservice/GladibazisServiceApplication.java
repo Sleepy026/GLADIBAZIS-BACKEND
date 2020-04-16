@@ -19,9 +19,6 @@ public class GladibazisServiceApplication {
 	@Autowired
 	private GladiolusRepository gladiolusRepository;
 
-	@Autowired
-	private CommentRepository commentRepository;
-
 	public static void main(String[] args) {
 		SpringApplication.run(GladibazisServiceApplication.class, args);
 	}
@@ -66,7 +63,7 @@ public class GladibazisServiceApplication {
 			Comment comment = Comment.builder()
 					.commentText("Ez egy nagyon szep virag")
 					.date(LocalDateTime.now())
-					.userName("Mester")
+					.authorId(1254124L)
 					.build();
 
 			Gladiolus red_balance = Gladiolus.builder()

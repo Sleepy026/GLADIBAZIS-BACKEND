@@ -8,9 +8,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Objects;
 
 @Data
 @NoArgsConstructor
@@ -32,7 +30,7 @@ public class Comment {
     private LocalDateTime date;
 
     @Column(nullable = false)
-    private String userName;
+    private Long authorId;
 
     @Column(nullable = false)
     private String commentText;

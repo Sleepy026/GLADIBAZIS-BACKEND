@@ -21,6 +21,8 @@ public class Gladiolus {
     @GeneratedValue
     private Long id;
 
+    private Long authorId;
+
     private String name;
 
     private String color;
