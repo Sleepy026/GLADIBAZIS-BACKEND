@@ -30,7 +30,7 @@ public class Comment {
     private LocalDateTime date;
 
     @Column(nullable = false)
-    private Long authorId;
+    private String author;
 
     @Column(nullable = false)
     private String commentText;

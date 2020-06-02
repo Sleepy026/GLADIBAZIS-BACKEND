@@ -1,5 +1,6 @@
 package com.gladibazis.gladibazisservice.controller;
 
+import com.gladibazis.gladibazisservice.controller.dto.CommentCredentials;
 import com.gladibazis.gladibazisservice.controller.dto.GladiCredentials;
 import com.gladibazis.gladibazisservice.model.Comment;
 import com.gladibazis.gladibazisservice.model.Gladiolus;
@@ -32,13 +33,13 @@ public class RouteController {
     }
 
     @GetMapping("/comments")
-    public List<Comment> getCommentsByFlower(@RequestParam Long flowerId){
-        return gladiService.getCommentsByFlower(flowerId);
+    public List<Comment> getCommentsByFlower(@RequestParam Long id){
+        return gladiService.getCommentsByFlower(id);
 
     }
 
     @PostMapping("/comment/add")
-    public String addNewComment(@RequestBody Comment comment){
+    public String addNewComment(@RequestBody CommentCredentials comment){
         return gladiService.addNewComment(comment);
     }
 

@@ -1,5 +1,6 @@
 package com.gladibazis.gladibazisservice.service;
 
+import com.gladibazis.gladibazisservice.controller.dto.CommentCredentials;
 import com.gladibazis.gladibazisservice.controller.dto.GladiCredentials;
 import com.gladibazis.gladibazisservice.model.Comment;
 import com.gladibazis.gladibazisservice.model.Gladiolus;
@@ -44,12 +45,18 @@ public class GladiService {
 
     }
 
-    public String addNewComment(Comment comment){
+    public String addNewComment(CommentCredentials comment){
         try {
             Gladiolus gladi = gladiolusRepository.findById(comment.getFlowerId()).orElseThrow();
-            comment.setGladiolus(gladi);
-            comment.setDate(LocalDateTime.now());
-            commentRepository.save(comment);
+            Comment build = Comment.builder()
+                    .author("Teszt Felhasznalo")
+                    .commentText(comment.getComment())
+                    .date(LocalDateTime.now())
+                    .build();
+            build.setGladiolus(gladi);
+            gladi.getComments().add(build);
+            commentRepository.save(build);
+            gladiolusRepository.save(gladi);
 
         } catch (Exception e){
             return "Something went wrong";
@@ -68,7 +75,7 @@ public class GladiService {
 
     public List<Comment> getCommentsByFlower(Long id) {
         try {
-            return commentRepository.findAllByGladiolusId(id);
+            return commentRepository.findAllByGladiolusIdOrderByDateDesc(id);
         }catch (Exception e){
            return new ArrayList<>();
         }
