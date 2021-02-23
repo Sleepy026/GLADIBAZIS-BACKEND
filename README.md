@@ -15,7 +15,7 @@ OpenPMAP
 <img alt="Spring" src="https://img.shields.io/badge/spring%20-%236DB33F.svg?&style=for-the-badge&logo=spring&logoColor=white"/>
 <img alt="Scala" src="https://img.shields.io/badge/scala-%23DC322F.svg?&style=for-the-badge&logo=scala&logoColor=white"/>
 <img alt="Docker" src="https://img.shields.io/badge/docker%20-%230db7ed.svg?&style=for-the-badge&logo=docker&logoColor=white"/>
-<img alt="Maven" src="https://img.shields.io/badge/maven%20-%230db7ed.svg?&style=for-the-badge&logo=apache-maven&logoColor=white"/>
+<img alt="Maven" src="https://img.shields.io/badge/maven%20-%231572B6.svg?&style=for-the-badge&logo=apache-maven&logoColor=white"/>
 </div>
 
 ## Table of content
