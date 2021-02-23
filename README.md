@@ -77,5 +77,5 @@ OpenPMAP is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, i
   <img src="https://profile-counter.glitch.me/Sleepy026/count.svg" />
 </p>
 
-[![Linkedin Badge](https://img.shields.io/badge/-Xtendr-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/company/xtendr)](https://www.linkedin.com//company/xtendr)
+[![Linkedin Badge](https://img.shields.io/badge/-Xtendr-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/company/xtendr)](https://www.linkedin.com/company/xtendr)
 [![Website Badge](https://img.shields.io/badge/-xtendr.io-e34f26?style=flat-square&logo=Google-Chrome&logoColor=white&link=https://xtendr.io/)](https://xtendr.io/)
