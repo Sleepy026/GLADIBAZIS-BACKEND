@@ -5,10 +5,10 @@
 OpenPMAP
 ======================
 
-<div>
-<img src="https://badges.pufler.dev/updated/Sleepy026/GLADIBAZIS-BACKEND/" />
-<img src="https://badges.pufler.dev/created/Sleepy026/GLADIBAZIS-BACKEND/" />
-</div>
+[![Open Source Love](https://badges.pufler.dev/updated/Sleepy026/GLADIBAZIS-BACKEND/)](https://github.com/ellerbrock/open-source-badge/)
+[![Open Source Love](https://badges.pufler.dev/created/Sleepy026/GLADIBAZIS-BACKEND/)](https://github.com/ellerbrock/open-source-badge/)
+[![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
+[![Open Source Love](https://badges.frapsoft.com/os/gpl/gpl.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 
 <div>
 <img alt="Java" src="https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white"/>
