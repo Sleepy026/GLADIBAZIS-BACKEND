@@ -10,13 +10,11 @@ OpenPMAP
 [![OpenPMAP](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/Sleepy026/GLADIBAZIS-BACKEND/)
 [![OpenPMAP](https://badges.frapsoft.com/os/gpl/gpl.svg?v=102)](https://github.com/Sleepy026/GLADIBAZIS-BACKEND/)
 
-<div>
-<img alt="Java" src="https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white"/>
-<img alt="Spring" src="https://img.shields.io/badge/spring%20-%236DB33F.svg?&style=for-the-badge&logo=spring&logoColor=white"/>
-<img alt="Scala" src="https://img.shields.io/badge/scala-%23DC322F.svg?&style=for-the-badge&logo=scala&logoColor=white"/>
-<img alt="Docker" src="https://img.shields.io/badge/docker%20-%230db7ed.svg?&style=for-the-badge&logo=docker&logoColor=white"/>
-<img alt="Maven" src="https://img.shields.io/badge/maven%20-%231572B6.svg?&style=for-the-badge&logo=apache-maven&logoColor=white"/>
-</div>
+[![OpenPMAP](https://img.shields.io/badge/maven%20-%231572B6.svg?&style=for-the-badge&logo=apache-maven&logoColor=white")](https://github.com/Sleepy026/GLADIBAZIS-BACKEND/)
+[![OpenPMAP](https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white")](https://github.com/Sleepy026/GLADIBAZIS-BACKEND/)
+[![OpenPMAP](https://img.shields.io/badge/spring%20-%236DB33F.svg?&style=for-the-badge&logo=spring&logoColor=white")](https://github.com/Sleepy026/GLADIBAZIS-BACKEND/)
+[![OpenPMAP](https://img.shields.io/badge/scala-%23DC322F.svg?&style=for-the-badge&logo=scala&logoColor=white")](https://github.com/Sleepy026/GLADIBAZIS-BACKEND/)
+[![OpenPMAP](https://img.shields.io/badge/docker%20-%230db7ed.svg?&style=for-the-badge&logo=docker&logoColor=white)](https://github.com/Sleepy026/GLADIBAZIS-BACKEND/)
 
 ## Table of content
 
